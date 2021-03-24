@@ -1,0 +1,224 @@
+A fecha de : 22/6/2018 11:41:39 a. m.,Exception: No se puede crear una instancia de 'MainWindow' en el ensamblado 'ScreenCaptureApl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. Se produjo una excepción en el destino de la invocación.  Error en el archivo de marcado 'MainWindow.xaml' Línea 1 Posición 9.
+A fecha de : 22/6/2018 11:43:13 a. m.,Exception:    en System.Windows.Markup.XamlParseException.ThrowException(String message, Exception innerException, Int32 lineNumber, Int32 linePosition, Uri baseUri, XamlObjectIds currentXamlObjectIds, XamlObjectIds contextXamlObjectIds, Type objectType)
+   en System.Windows.Markup.XamlParseException.ThrowException(ParserContext parserContext, Int32 lineNumber, Int32 linePosition, String message, Exception innerException)
+   en System.Windows.Markup.BamlRecordReader.ThrowExceptionWithLine(String message, Exception innerException)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+   en System.Windows.Markup.BamlRecordReader.GetElementAndFlags(BamlElementStartRecord bamlElementStartRecord, Object& element, ReaderFlags& flags, Type& delayCreatedType, Int16& delayCreatedTypeId)
+   en System.Windows.Markup.BamlRecordReader.BaseReadElementStartRecord(BamlElementStartRecord bamlElementRecord)
+   en System.Windows.Markup.BamlRecordReader.ReadElementStartRecord(BamlElementStartRecord bamlElementRecord)
+   en System.Windows.Markup.BamlRecordReader.ReadRecord(BamlRecord bamlRecord)
+   en System.Windows.Markup.BamlRecordReader.Read(Boolean singleRecord)
+   en System.Windows.Markup.TreeBuilderBamlTranslator.ParseFragment()
+   en System.Windows.Markup.TreeBuilder.Parse()
+   en System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   en System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   en System.Windows.Application.LoadComponent(Uri resourceLocator, Boolean bSkipJournaledProperties)
+   en System.Windows.Application.DoStartup()
+   en System.Windows.Application.<.ctor>b__0(Object unused)
+   en System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   en System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   en System.Windows.Threading.Dispatcher.WrappedInvoke(Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   en System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   en System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext(Object state)
+   en System.Threading.ExecutionContext.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Windows.Threading.DispatcherOperation.Invoke()
+   en System.Windows.Threading.Dispatcher.ProcessQueue()
+   en System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   en MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   en MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   en System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   en System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   en System.Windows.Threading.Dispatcher.WrappedInvoke(Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   en System.Windows.Threading.Dispatcher.InvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Boolean isSingleParameter)
+   en System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   en MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   en MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   en System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   en System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   en System.Windows.Threading.Dispatcher.Run()
+   en System.Windows.Application.RunDispatcher(Object ignore)
+   en System.Windows.Application.RunInternal(Window window)
+   en System.Windows.Application.Run(Window window)
+   en System.Windows.Application.Run()
+   en ScreenCaptureApl.App.Main()
+A fecha de : 22/6/2018 11:46:12 a. m.,Exception: AppDomain.CurrentDomain.UnhandledException
+A fecha de : 22/6/2018 11:48:03 a. m.,Exception: PresentationFramework
+A fecha de : 22/6/2018 11:49:28 a. m.,Exception: Void ThrowException(System.String, System.Exception, Int32, Int32, System.Uri, System.Windows.Markup.XamlObjectIds, System.Windows.Markup.XamlObjectIds, System.Type)
+A fecha de : 22/6/2018 11:52:56 a. m.,Exception: 
+A fecha de : 22/6/2018 11:56:35 a. m.,Exception: System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.DivideByZeroException: Intento de dividir por cero.
+   en ScreenCaptureApl.MainWindow.initializeVariable() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 84
+   en ScreenCaptureApl.MainWindow..ctor() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 50
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   en System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   en System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   en System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+====================================================================================
+A fecha de : 3/7/2018 6:26:39 p. m.AppDomain.CurrentDomain.UnhandledException,Exception: System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.DivideByZeroException: Intento de dividir por cero.
+   en ScreenCaptureApl.MainWindow.initializeVariable() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 87
+   en ScreenCaptureApl.MainWindow..ctor() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 51
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   en System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   en System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   en System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+####################################################################################
+====================================================================================
+A fecha de : 3/7/2018 6:33:03 p. m.AppDomain.CurrentDomain.UnhandledException,Exception: System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.DivideByZeroException: Intento de dividir por cero.
+   en ScreenCaptureApl.MainWindow.initializeVariable() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 87
+   en ScreenCaptureApl.MainWindow..ctor() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 51
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   en System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   en System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   en System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+####################################################################################
+====================================================================================
+A fecha de : 3/7/2018 6:35:53 p. m.AppDomain.CurrentDomain.UnhandledException,Exception: System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.DivideByZeroException: Intento de dividir por cero.
+   en ScreenCaptureApl.MainWindow.initializeVariable() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 87
+   en ScreenCaptureApl.MainWindow..ctor() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 51
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   en System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   en System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   en System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+####################################################################################
+====================================================================================
+A fecha de : 3/7/2018 6:37:09 p. m.AppDomain.CurrentDomain.UnhandledException,Exception: System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.DivideByZeroException: Intento de dividir por cero.
+   en ScreenCaptureApl.MainWindow.initializeVariable() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 87
+   en ScreenCaptureApl.MainWindow..ctor() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 51
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   en System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   en System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   en System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+####################################################################################
+====================================================================================
+A fecha de : 3/7/2018 6:37:49 p. m. event: AppDomain.CurrentDomain.UnhandledException,Exception: System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.DivideByZeroException: Intento de dividir por cero.
+   en ScreenCaptureApl.MainWindow.initializeVariable() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 87
+   en ScreenCaptureApl.MainWindow..ctor() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 51
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   en System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   en System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   en System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+####################################################################################
+====================================================================================
+Fecha: 3/7/2018 8:36:51 p. m.
+Event: AppDomain.CurrentDomain.UnhandledException
+Exception: System.Reflection.TargetInvocationException: Se produjo una excepción en el destino de la invocación. ---> System.DivideByZeroException: Intento de dividir por cero.
+   en ScreenCaptureApl.MainWindow.initializeVariable() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 60
+   en ScreenCaptureApl.MainWindow..ctor() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 51
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandle& ctor, Boolean& bNeedSecurityCheck)
+   en System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean fillCache)
+   en System.RuntimeType.CreateInstanceImpl(Boolean publicOnly, Boolean skipVisibilityChecks, Boolean fillCache)
+   en System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+####################################################################################
+====================================================================================
+Fecha: 3/7/2018 8:38:50 p. m.
+Event: AppDomain.CurrentDomain.UnhandledException
+Exception: No se puede crear una instancia de 'MainWindow' en el ensamblado 'ScreenCaptureApl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. Se produjo una excepción en el destino de la invocación.  Error en el archivo de marcado 'MainWindow.xaml' Línea 1 Posición 9.
+####################################################################################
+====================================================================================
+Fecha: 3/7/2018 8:40:01 p. m.
+Event: AppDomain.CurrentDomain.UnhandledException
+Exception:    en System.Windows.Markup.XamlParseException.ThrowException(String message, Exception innerException, Int32 lineNumber, Int32 linePosition, Uri baseUri, XamlObjectIds currentXamlObjectIds, XamlObjectIds contextXamlObjectIds, Type objectType)
+   en System.Windows.Markup.XamlParseException.ThrowException(ParserContext parserContext, Int32 lineNumber, Int32 linePosition, String message, Exception innerException)
+   en System.Windows.Markup.BamlRecordReader.ThrowExceptionWithLine(String message, Exception innerException)
+   en System.Windows.Markup.BamlRecordReader.CreateInstanceFromType(Type type, Int16 typeId, Boolean throwOnFail)
+   en System.Windows.Markup.BamlRecordReader.GetElementAndFlags(BamlElementStartRecord bamlElementStartRecord, Object& element, ReaderFlags& flags, Type& delayCreatedType, Int16& delayCreatedTypeId)
+   en System.Windows.Markup.BamlRecordReader.BaseReadElementStartRecord(BamlElementStartRecord bamlElementRecord)
+   en System.Windows.Markup.BamlRecordReader.ReadElementStartRecord(BamlElementStartRecord bamlElementRecord)
+   en System.Windows.Markup.BamlRecordReader.ReadRecord(BamlRecord bamlRecord)
+   en System.Windows.Markup.BamlRecordReader.Read(Boolean singleRecord)
+   en System.Windows.Markup.TreeBuilderBamlTranslator.ParseFragment()
+   en System.Windows.Markup.TreeBuilder.Parse()
+   en System.Windows.Markup.XamlReader.LoadBaml(Stream stream, ParserContext parserContext, Object parent, Boolean closeStream)
+   en System.Windows.Application.LoadBamlStreamWithSyncInfo(Stream stream, ParserContext pc)
+   en System.Windows.Application.LoadComponent(Uri resourceLocator, Boolean bSkipJournaledProperties)
+   en System.Windows.Application.DoStartup()
+   en System.Windows.Application.<.ctor>b__0(Object unused)
+   en System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   en System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   en System.Windows.Threading.Dispatcher.WrappedInvoke(Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   en System.Windows.Threading.DispatcherOperation.InvokeImpl()
+   en System.Windows.Threading.DispatcherOperation.InvokeInSecurityContext(Object state)
+   en System.Threading.ExecutionContext.runTryCode(Object userData)
+   en System.Runtime.CompilerServices.RuntimeHelpers.ExecuteCodeWithGuaranteedCleanup(TryCode code, CleanupCode backoutCode, Object userData)
+   en System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Threading.ExecutionContext.Run(ExecutionContext executionContext, ContextCallback callback, Object state)
+   en System.Windows.Threading.DispatcherOperation.Invoke()
+   en System.Windows.Threading.Dispatcher.ProcessQueue()
+   en System.Windows.Threading.Dispatcher.WndProcHook(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   en MS.Win32.HwndWrapper.WndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam, Boolean& handled)
+   en MS.Win32.HwndSubclass.DispatcherCallbackOperation(Object o)
+   en System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Boolean isSingleParameter)
+   en System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   en System.Windows.Threading.Dispatcher.WrappedInvoke(Delegate callback, Object args, Boolean isSingleParameter, Delegate catchHandler)
+   en System.Windows.Threading.Dispatcher.InvokeImpl(DispatcherPriority priority, TimeSpan timeout, Delegate method, Object args, Boolean isSingleParameter)
+   en System.Windows.Threading.Dispatcher.Invoke(DispatcherPriority priority, Delegate method, Object arg)
+   en MS.Win32.HwndSubclass.SubclassWndProc(IntPtr hwnd, Int32 msg, IntPtr wParam, IntPtr lParam)
+   en MS.Win32.UnsafeNativeMethods.DispatchMessage(MSG& msg)
+   en System.Windows.Threading.Dispatcher.PushFrameImpl(DispatcherFrame frame)
+   en System.Windows.Threading.Dispatcher.PushFrame(DispatcherFrame frame)
+   en System.Windows.Threading.Dispatcher.Run()
+   en System.Windows.Application.RunDispatcher(Object ignore)
+   en System.Windows.Application.RunInternal(Window window)
+   en System.Windows.Application.Run(Window window)
+   en System.Windows.Application.Run()
+   en ScreenCaptureApl.App.Main()
+####################################################################################
+====================================================================================
+Fecha: 3/7/2018 8:40:50 p. m.
+Event: AppDomain.CurrentDomain.UnhandledException
+Exception: 
+####################################################################################
+====================================================================================
+Fecha: 3/7/2018 8:42:26 p. m.
+Event: AppDomain.CurrentDomain.UnhandledException
+Exception: PresentationFramework
+####################################################################################
+====================================================================================
+Fecha: 3/7/2018 8:43:10 p. m.
+Event: AppDomain.CurrentDomain.UnhandledException
+Exception: No se puede crear una instancia de 'MainWindow' en el ensamblado 'ScreenCaptureApl, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null'. Se produjo una excepción en el destino de la invocación.  Error en el archivo de marcado 'MainWindow.xaml' Línea 1 Posición 9.
+####################################################################################
+====================================================================================
+Fecha: 4/7/2018 1:26:35 a. m.
+Event: AppDomain.CurrentDomain.UnhandledException
+Message: Referencia a objeto no establecida como instancia de un objeto.
+####################################################################################
+====================================================================================
+Fecha: 4/7/2018 8:40:23 p. m.
+Event: ERROR Inicializando las variables
+Message: Referencia a objeto no establecida como instancia de un objeto.
+####################################################################################
+====================================================================================
+Fecha: 4/7/2018 8:42:23 p. m.
+Event: ERROR Inicializando las variables
+Message: Referencia a objeto no establecida como instancia de un objeto.
+####################################################################################
+====================================================================================
+Fecha: 10/7/2018 6:17:21 p. m.
+Event: ScreenCaptureApl
+Message: Intento de dividir por cero.
+####################################################################################
+====================================================================================
+Fecha: 10/7/2018 6:18:13 p. m.
+Event:    en ScreenCaptureApl.MainWindow.Percent(Int32 _valor, Int32 _total) en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 278
+   en ScreenCaptureApl.MainWindow.ComparaScreen(Bitmap _img1, Bitmap _img2) en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 298
+   en ScreenCaptureApl.MainWindow.ComparaMensaje() en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 353
+   en ScreenCaptureApl.MainWindow.TimeElapsed(Object sender, ElapsedEventArgs e) en C:\Users\gerson\source\repos\ScreenCaptureApl\ScreenCaptureApl\MainWindow.xaml.cs:línea 525
+Message: Intento de dividir por cero.
+####################################################################################

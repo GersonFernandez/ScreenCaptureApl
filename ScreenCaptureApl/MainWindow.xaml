@@ -1,0 +1,14 @@
+﻿<Window x:Class="ScreenCaptureApl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ScreenCaptureApl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Capture" HorizontalAlignment="Left" Margin="189.988,139.275,0,0" VerticalAlignment="Top" Width="96.554" Height="47.713" Click="Button_Click"/>
+        <Button Content="Stop Capture" HorizontalAlignment="Left" Margin="306.997,139.275,0,0" VerticalAlignment="Top" Width="115.029" Height="47.713" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
